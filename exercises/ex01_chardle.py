@@ -33,7 +33,7 @@ if len(word) == 5:
             print("5 instances of " + letter + " found in " + word)
     else: 
         print("Error: Character must be a single character.")
-        print(exit)
+        exit
 else: 
     print("Error: Word must contain 5 characters")
-    print(exit)
+    exit
