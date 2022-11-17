@@ -36,7 +36,7 @@ class Cell:
     """An individual subject in the simulation."""
     location: Point
     direction: Point
-    sickness: int = 0
+    sickness: int = constants.VULNERABLE
 
     def __init__(self, location: Point, direction: Point):
         """Construct a cell with its location and direction."""
@@ -57,7 +57,7 @@ class Cell:
 
     def is_vulnerable(self) -> bool:
         """A method of a Cell that returns True when the cell's sickness attribute is equal to VULNERABLE and False otherwise."""
-        if self.sickness == 0:
+        if self.sickness == constants.VULNERABLE:
             return True
         else: 
             return False
